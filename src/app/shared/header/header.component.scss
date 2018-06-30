@@ -1,0 +1,12 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+header {
+  height: 60px;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  background-color: #61d800;
+}
