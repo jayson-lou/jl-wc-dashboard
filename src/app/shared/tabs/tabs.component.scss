@@ -1,0 +1,20 @@
+.menu {
+  min-height: 100vh;
+}
+
+.menu-tab {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e8eaed;
+  padding-left: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.selected {
+  border-left: 5px solid #61d800;
+  padding-left: 3px !important;
+}
+
+.tab-icon {
+  height: 20px;
+}
