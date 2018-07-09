@@ -1,11 +1,11 @@
 .menu {
-  min-height: 100vh;
+  // min-height: 100vh;
 }
 
 .menu-tab {
   background-color: #ffffff;
   border-bottom: 2px solid #e8eaed;
-  padding-left: 5px;
+  border-right: 2px solid #e8eaed;
   vertical-align: middle;
   cursor: pointer;
 }

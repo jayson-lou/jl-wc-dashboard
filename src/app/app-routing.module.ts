@@ -7,8 +7,8 @@ import { GroupsComponent } from './pages/groups/groups.component';
 import { TeamsComponent } from './pages/teams/teams.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/matches', pathMatch: 'full' },
-  { path: 'matches', component: MatchesComponent },
+  { path: '', redirectTo: '/games', pathMatch: 'full' },
+  { path: 'games', component: MatchesComponent },
   { path: 'groups', component: GroupsComponent },
   { path: 'teams', component: TeamsComponent }
 ];
