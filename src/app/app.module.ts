@@ -11,6 +11,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { TabsComponent } from './shared/tabs/tabs.component';
 import { GroupsComponent } from './pages/groups/groups.component';
 import { TeamsComponent } from './pages/teams/teams.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { TeamsComponent } from './pages/teams/teams.component';
     MatchesComponent,
     TabsComponent,
     GroupsComponent,
-    TeamsComponent
+    TeamsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     NgbModule.forRoot(),
     AngularFontAwesomeModule,
     RouterModule,

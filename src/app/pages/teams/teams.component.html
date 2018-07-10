@@ -1,9 +1,27 @@
-<div class="mx-3 mx-sm-4 mx-md-5 my-4">
-  <h1><strong>Teams</strong></h1>
-  <hr class="py-2">
-  <div class="col-12 px-0">
-    <div class="card mx-2">
-      <div class="card-header">Country</div>
+<div class="mx-3 mx-sm-4 mx-md-5 mt-4 mb-5">
+  <div *ngIf="teams; else loading">
+    <h1><strong>Teams</strong></h1>
+    <hr class="py-2">
+    <div class="col-12 col-sm-8">
+      <table class="px-0 table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="col-1">#</th>
+            <th class="col-9">Country</th>
+            <th class="col-2">Group</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let team of teams; index as index">
+          <tr>
+            <td scope="row">{{ index + 1 }}</td>
+            <td>{{ team.country }}</td>
+            <td>{{ team.group_letter }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
+  <ng-template #loading>
+    <app-loading></app-loading>
+  </ng-template>
 </div>
